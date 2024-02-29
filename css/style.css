@@ -1,50 +1,65 @@
-@charset "utf-8";
-
 body {
-  margin: 0;
-  }
+	width: 100%;
+}
+.wide {
+	width: 400px;
+	margin: 0 auto;
+}
 
-.clearfix::after {
-  content: "";
-  display: block;
-  clear: both;
-}
 .red {
-width: 400px;
-height: 100px;
-background: #ff0000;
-}
+	height: 100px;
+	background: #ff0000;
+	}
 
 .green {
-  width: 150px;
-  height: 250px;
-  background: #00ff51;
-  }
+	float: left;
+	width: 150px;
+	height: 250px;
+	background: #00ff51;
+	}
+
+.box {
+	float: right;
+	width: 250px;
+	height: 250px;
+}
+.magenta-cyan {
+	float: left;
+	width: 150px;
+}
 
 .magenta {
-  width: 150px;
-  height: 50px;
-  background: #cc00db;
-  }
+	height: 50px;
+	background: #cc00db;
+	}
 
-  .magenta {
-    width: 150px;
-    height: 100px;
-    background: #0093b7;
-    }
-    .beige {
-      width: 100px;
-      height: 150px;
-      background: #ff9e6b;
-      }
-      .brown {
-        width: 250px;
-        height: 100px;
-        background: #8c2727;
-        }
+.cyan {
+	height: 100px;
+	background: #0093b7;
+	}
 
-        .yellow{
-          width: 400px;
-          height: 100px;
-          background: #fff700;
-          }
+
+.beige {
+	float: right;
+	width: 100px;
+	height: 150px;
+	background: #ff9e6b;
+	}
+
+.brown {
+	height: 100px;
+	background: #8c2727;
+	}
+
+.yellow {
+	height: 100px;
+	background: #fff700;
+	}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
